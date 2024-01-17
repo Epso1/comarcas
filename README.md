@@ -9,6 +9,13 @@ Siendo $provincia y $comarca la provincia y la comarca sobre la que queremos ped
 ## Requisitos
 Para ejecutar la aplicación, necesitas tener instalado [Dart](https://dart.dev/get-dart) en tu equipo.
 
+
+## Instalación
+Para instalar la aplicación, descarga el repositorio y ábrelo en tu IDE favorito.
+Es posible que necesites habilitar el soporte para Dart en tu IDE, para ello tendrás que indicar la 
+ubicación del Dart SDK que, suele estar en la carpeta: /home/"usuario"/snap/flutter/common/flutter/bin/cache/dart-sdk. Para más información, consulta la [documentación de Dart](https://dart.dev/tools).
+También es posible que necesites ejecutar el comando `pub get` para instalar las dependencias del proyecto. 
+
 ## Funcionalidades
 
 La aplicación ofrece dos funcionalidades desde la línea de órdenes:
