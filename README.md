@@ -23,13 +23,34 @@ La aplicación recibe varios argumentos por la línea de órdenes. El primero ac
 #### Ejemplos
 
 Para obtener las comarcas de Castelló, ejecuta:
-
 $ dart run comarcas comarques Castelló
 
 Para obtener información sobre la comarca de “La Ribera Baixa”, ejecuta:
-
 $ dart run comarcas infocomarca La Ribera Baixa
 
-En su ejecución desde Windows, la aplicación admite admite apóstrofos, así que no debes escapar a estos. Por ejemplo:
-
+En su ejecución desde Windows, la aplicación admite apóstrofos, así que no debes escapar a estos. Por ejemplo:
 $ dart run comarcas infocomarca L'alcoià
+
+En cambio, en Linux, debes escapar a los apóstrofos. Por ejemplo:
+$ dart run comarcas infocomarca L\'alcoià
+
+##### Nota
+
+Para el correcto funcionamiento de la aplicación, es necesario que los argumentos de las comarcas y 
+las provincias coincidan con los de la API.
+Como algunos nombres de comarcas no están correctamente escritos en la API, como "l'alcoià" que 
+deberia llevar la primera "a" en mayúscula, se han incluido dos métodos para listar y poder consultar
+el nombre de las provincias y las comarcas disponibles en la API.
+
+Para mostrar el listado de provincias, ejecuta:
+$ dart run comarcas totesprovincies
+
+Para mostrar el listado de comarcas, ejecuta:
+$ dart run comarcas totescomarques
+
+Cuando se introduzca el nombre de una provincia o comarca, se comprobará si existe en la API y si no existe, se mostrará un mensaje de error y
+se informará de qué comando hay que ejecutar para mostrar un listado de provincias o comarcas disponibles.
+
+
+
+
